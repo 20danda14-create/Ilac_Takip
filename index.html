@@ -1,7 +1,14 @@
 <!doctype html>
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#123b52"><meta name="description" content="Günlük ilaç saatleri ve takip uygulaması"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg"><link rel="stylesheet" href="styles.css"><title>İlaç Takip Asistanı</title></head>
 <body>
-<header class="topbar"><div class="brand"><div class="brand-icon">✚</div><div><div class="brand-title">İlaç Takip Asistanı</div><div class="brand-sub">Günlük ilaç düzeniniz</div></div></div><button id="fontToggle" class="header-btn" aria-label="Yazıyı büyüt">A+</button></header>
+<header class="topbar"><div class="brand"><div class="brand-icon" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 128 128"
+       width="32" height="32">
+    <path fill="white"
+      d="M91 18 A49 49 0 1 0 110 96 A42 42 0 0 1 91 18Z"/>
+  </svg>
+</div><div><div class="brand-title">İlaç Takip Asistanı</div><div class="brand-sub">Günlük ilaç düzeniniz</div></div></div><button id="fontToggle" class="header-btn" aria-label="Yazıyı büyüt">A+</button></header>
 <main class="container">
 <section class="welcome"><div><p class="eyebrow" id="todayLabel">BUGÜN</p><h1>Merhaba</h1><p class="welcome-copy">İlaçlarınızı saatinde takip edin. Aldığınız ilacı tek dokunuşla işaretleyin.</p></div><div class="progress-ring"><strong id="progressPercent">0%</strong><span>Tamamlandı</span></div></section>
 <section class="progress-card"><div class="progress-line"><span id="progressText">0 / 0 kayıt tamamlandı</span><span id="remainingText">Başlayabilirsiniz</span></div><div class="progress-track"><div id="progressBar" class="progress-fill"></div></div></section>
